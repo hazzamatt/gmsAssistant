@@ -1,0 +1,222 @@
+<div class="row50">
+	<p class="center">Note: The character creation page is currently designed specifically for DnD 5th Ed.  A more generic form will be released in the future.</p>
+</div>
+
+<form action="#">
+	<div class="row50">
+		<div class="columnThird">
+			<label>Character Name: </label><input type="text" name="cName" maxlength="20">
+		</div>
+		
+		<div class="columnThird">
+			&nbsp;
+		</div>
+
+		<div class="columnThird">
+		<label>Campaign: </label><input type="text" name="campaignName" maxLength="30">
+		</div>
+	</div>
+	
+	<div class="row50">
+		<div class="columnThird">
+			<label>Class: </label>	<select>
+										<option value="">Select One</option>
+										<option value="Barbarian">Barbarian</option>
+										<option value="Bard">Bard</option>
+										<option value="Cleric">Cleric</option>
+										<option value="Druid">Druid</option>
+										<option value="Fighter">Fighter</option>
+										<option value="Monk">Monk</option>
+										<option value="Paladin">Paladin</option>
+										<option value="Ranger">Ranger</option>
+										<option value="Rogue">Rogue</option>
+										<option value="Sorcerer">Sorcerer</option>
+										<option value="Warlock">Warlock</option>
+										<option value="Wizard">Wizard</option>
+									</select>
+
+			<label>Level: </label><input type="number" id="cLevel" name="cLevel" min="1" max="20" ng-blur="levelCheck()" value="1">
+		</div>
+
+		<div class="columnThird">
+			<label>Background: </label><input type="text" name="cBackground" maxlength="20" placeholder="Noble, Criminal, etc...">
+		</div>
+
+		<div class="columnThird">
+			<label>Race: </label> 	<select>
+										<option value="">Select One</option>
+										<option value="Dwarf">Dwarf</option>
+										<option value="Elf">Elf</option>
+										<option value="Halfling">Halfling</option>
+										<option value="Human">Human</option>
+										<option value="Dragonborn">Dragonborn</option>
+										<option value="Gnome">Gnome</option>
+										<option value="Half-Elf">Half-Elf</option>
+										<option value="Half-Orc">Half-Orc</option>
+										<option value="Tiefling">Tiefling</option>
+									</select>
+		</div>
+	</div>
+		
+	<div class="row50">
+		<div class="columnThird">
+			<label>Alignment: </label> 	<select>
+											<option value="">Select One</option>
+											<option value="LG">Lawful Good</option>
+											<option value="NG">Neutral Good</option>
+											<option value="CG">Chaotic Good</option>
+											<option value="LN">Lawful Neutral</option>
+											<option value="TN">True Neutral</option>
+											<option value="CN">Chaotic Neutral</option>
+											<option value="LE">Lawful Evil</option>
+											<option value="NE">Neutral Evil</option>
+											<option value="CE">Chaotic Evil</option>
+										</select>
+		</div>
+
+		<div class="columnThird">
+			<label>Age: </label><input type="number" name="cAge" min="1" max="999">
+
+			<label>Skin: </label><input type="text" name="cSkin" size="11">
+		</div>
+
+		<div class="columnThird">
+			<label>Height: </label><input type="text" name="cHeight" size="11">
+
+			<label>Weight: </label><input type="number" name="cWeight" min="1" max="999">
+		</div>
+	</div>
+
+	<div class="row50">
+		<div class="columnThird">
+			&nbsp;
+		</div>
+
+		<div class="columnThird center">
+			<label>Proficiency</label>
+			<br /><input type="number" name="cProficiency" min="2" max="6" value="2">
+		</div>
+
+		<div class="columnThird">
+			&nbsp;
+		</div>
+	</div>
+
+	<div class="row50">
+		<div class="columnSixth center">
+			<label>Strength</label>
+			<br><input type="number" name="cStr" min="1" max="20" value="10">
+		</div>
+		<div class="columnSixth center">
+			<label>Dexterity</label>
+			<br><input type="number" name="cDex" min="1" max="20" value="10">
+		</div>
+		<div class="columnSixth center">
+			<label>Constitution</label>
+			<br><input type="number" name="cCon" min="1" max="20" value="10">
+		</div>
+		<div class="columnSixth center">
+			<label>Intelligence</label>
+			<br><input type="number" name="cInt" min="1" max="20" value="10">
+		</div>
+		<div class="columnSixth center">
+			<label>Wisdom</label>
+			<br><input type="number" name="cWis" min="1" max="20" value="10">
+		</div>
+		<div class="columnSixth center">
+			<label>Charisma</label>
+			<br><input type="number" name="cCha" min="1" max="20" value="10">
+		</div>
+	</div>
+
+	<div class="row100">
+		<div class="highlightBox">
+			<h5 class="center">Saving Throws</h5>
+			<div class="columnSixth center">
+				<input type="number" name="cSavingStr" min="-5" max="16" value="0">
+			</div>
+			<div class="columnSixth center">
+				<input type="number" name="cSavingDex" min="-5" max="16" value="0">
+			</div>
+			<div class="columnSixth center">
+				<input type="number" name="cSavingCon" min="-5" max="16" value="0">
+			</div>
+			<div class="columnSixth center">
+				<input type="number" name="cSavingInt" min="-5" max="16" value="0">
+			</div>
+			<div class="columnSixth center">
+				<input type="number" name="cSavingWis" min="-5" max="16" value="0">
+			</div>
+			<div class="columnSixth center">
+				<input type="number" name="cSavingCha" min="-5" max="16" value="0">
+			</div>
+		</div>
+	</div>
+
+	<div class="row300">
+		<h5 class="center">Skills</h5>
+		<div class="columnSixth center">
+			Athletics
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+		</div>
+		<div class="columnSixth center">
+			Acrobatics
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+			<br>
+			<br>Sleight of Hand
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+			<br>
+			<br>Stealth
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+		</div>
+		<div class="columnSixth center">
+			&nbsp;
+		</div>
+		<div class="columnSixth center">
+			Arcana
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+			<br>
+			<br>History
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+			<br>
+			<br>Investigation
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+			<br>
+			<br>Nature
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+			<br>
+			<br>Religion
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+		</div>
+		<div class="columnSixth center">
+			Animal Handling
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+			<br>
+			<br>Insight
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+			<br>
+			<br>Medicine
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+			<br>
+			<br>Perception
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+			<br>
+			<br>Survival
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+		</div>
+		<div class="columnSixth center">
+			Deception
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+			<br>
+			<br>Intimidation
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+			<br>
+			<br>Performance
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+			<br>
+			<br>Persuation
+			<br><input type="number" name="cSavingStr" min="-5" max="16" value="0">
+		</div>
+	</div>
+
+</form>

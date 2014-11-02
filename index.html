@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="assistantApp">
+	<head>
+		<meta charset="utf-8">
+
+		<title>The Dm's Assistant</title>
+
+		<link href="css/commons.css" rel="stylesheet" type="text/css" />
+		<link href="css/credentials.css" rel="stylesheet" type="text/css" />
+
+		<script src="lib/jquery/jquery-2.0.3.min.js"></script>
+		<script src="lib/angular/angular.min.js"></script>
+		<script src="lib/angular/angular-route.min.js"></script>
+
+		<script src="javascript/dms_assistant_app.js"></script>
+		<script src="javascript/dms_assistant_controllers.js"></script>
+	</head>
+	<body>
+		<div id="border">
+			<div id="container">
+				<div id="header">
+					<h1>The Dm's Assistant</h1>
+				</div>
+				<div id="navigation">
+					<a href="#/home">Home</a> | DM Notes | <a href="#/characterCreation">Character Creation</a> | Character Sheet
+				</div>
+				<div ng-view id="content" class="view-frame"></div>
+				<div class="clear">
+					&nbsp;
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

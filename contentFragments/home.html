@@ -1,0 +1,24 @@
+<!--Note!  Database admin username stuff is Username: dmsassistantadmin and Password: dmsassistant8418-->
+<div id="credentials">
+	<div id="login">
+		<form name="login" action="#">
+			<h3>Login:</h3>
+			<label class="formLabel">Email:</label> <input type="text" name="username">
+			<br />
+			<label class="formLabel">Password:</label> <input type="password" name="password">
+			<br /><!--This last break is here just to make the password field line up with the email field.  Otherwise it sits to the right by approx. 1 space.-->
+		</form>
+	</div>
+	<div id="register">
+		<form name="registration" method="POST" action="#">
+			<h3>Register:</h3>
+			<label for="registerEmail" class="formLabel">Email:</label> <input type="text" id="registerEmail" name="email">
+			<br />
+			<label for="registerPassword" class="formLabel">Password:</label> <input type="password" id="registerPassword" name="password">
+			<br />
+			<label for="registerSecondPassword" class="formLabel">Re-enter Password:</label> <input type="password" id="registerSecondPassword" name="reenterpwd">
+			<br /><!--This last break is here just to make the re-enter password field line up with the password field.  Otherwise it sits to the right by approx. 1 space.-->
+			<label class="formLabel">&nbsp;</label> <button class="alignLeft">Submit</button>
+		</form>
+	</div>
+</div>
