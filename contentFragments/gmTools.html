@@ -1,0 +1,19 @@
+<div class="rowBasic">
+
+</div>
+
+<br>
+
+<div class="rowBasic">
+	<div class="columnHalf alignRight">
+		<input id="personName" type="text" placeholder="Name"> <button type="button" ng-click="removeInit()">Clear Initiative</button>
+		<br> <input id="personInit" type="text" placeholder="Initiative"> <button type="button" ng-click="addInit()">Add Initiative</button>
+		<br>
+	</div>
+
+	<div class="columnHalf alignLeft">
+		<select id="initPreview" multiple>
+			<option ng-repeat="person in reversedList" value="{{person.initiative}}">{{person.initiative}} - {{person.name}}</option>
+		</select>
+	</div>
+</div>

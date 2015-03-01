@@ -25,6 +25,12 @@ h5{
 	background-color: #F1E9D2;
 }
 
+.rowBasic{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
 .row50{
 	height: 50px;
 	margin-left: 10px;
@@ -61,6 +67,12 @@ h5{
 	float: left;
 }
 
+.columnHalf{
+	width: 50%;
+	height: inherit;
+	float: left;
+}
+
 .highlightBox{
 	background-color: #999;
 	width: 100%;
@@ -74,6 +86,14 @@ h5{
 
 .center{
 	text-align: center;
+}
+
+.alignLeft{
+	text-align: left;
+}
+
+.alignRight{
+	text-align: right;
 }
 
 #navigation{
@@ -97,4 +117,10 @@ h5{
 	background-image: url('../images/ribbon_right_fold.gif');
 	background-repeat: no-repeat;
 	background-position: left bottom;
+}
+
+/* GM Tools Specific CSS */
+
+#initPreview{
+	width: 150px;
 }

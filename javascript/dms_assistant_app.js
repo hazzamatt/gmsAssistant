@@ -9,9 +9,21 @@ assistantApp.config(['$routeProvider',
 				templateUrl: 'contentFragments/home.html',
 				controller: 'HomePageCtrl'
 			}).
+			when('/gmTools', {
+				templateUrl: 'contentFragments/gmTools.html',
+				controller: 'GmToolsCtrl'
+			}).
 			when('/characterCreation', {
-				templateUrl: 'contentFragments/characterSheet.html',
+				templateUrl: 'contentFragments/characterCreation.html',
 				controller: 'CharacterCreationCtrl'
+			}).
+			when('/characterSheet', {
+				templateUrl: 'contentFragments/characterSheet.html',
+				controller: 'CharacterSheetCtrl'
+			}).
+			when('/aboutTheApp', {
+				templateUrl: 'contentFragments/aboutTheApp.html',
+				controller: 'AboutTheApp'
 			}).
 			otherwise({
 				redirectTo: '/home'
